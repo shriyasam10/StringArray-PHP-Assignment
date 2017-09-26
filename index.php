@@ -17,6 +17,10 @@
   $array4 = array("FirSt" => 1, "sEconD" => 2);
   $obj->changeKeyCase($array4);
 
+  $array5 = array("green", "red", "blue", "red");
+  $array6 = array("green", "yellow", "red");
+  $obj->arrayDifference($array5,$array6);
+	
  	class main {
  
 	public function __construct() {
@@ -60,6 +64,18 @@
 		$result3 = array_change_key_case($array4);
 		print_r($result3);
 		echo '<hr>';
+	}
+	
+	public function arrayDifference($array5,$array6) {
+		echo '<h1> Array Difference function demo </h1>';
+		echo '</br>First array</br>';
+		print_r($array5);
+		echo '</br>Second array</br>';
+		print_r($array6);
+		echo '</br>Difference between the two arrays</br>';
+		$result4 = array_diff($array5,$array6);
+		print_r($result4);
+		echo '<hr>';																	
 	}
 
         public function __destruct() {
