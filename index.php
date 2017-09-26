@@ -14,6 +14,9 @@
   $array3 = array(11,21,31,41);
   $obj->countArray($array3);
 
+  $array4 = array("FirSt" => 1, "sEconD" => 2);
+  $obj->changeKeyCase($array4);
+
  	class main {
  
 	public function __construct() {
@@ -46,6 +49,16 @@
 		echo'</br>No of elements in the array are:';
 		$result1 = count($array3);
 		print_r($result1);
+		echo '<hr>';
+	}
+
+	public function changeKeyCase($array4) {
+		echo '<h1> Change array keys case function </h1>';
+		echo '</br>Array before function use</br>';
+		print_r($array4);
+		echo '</br>Array after function use</br>';
+		$result3 = array_change_key_case($array4);
+		print_r($result3);
 		echo '<hr>';
 	}
 
