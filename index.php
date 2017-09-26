@@ -11,7 +11,10 @@
   $array2 = array(8,9);
   $obj->mergeArray($array,$array1);
 
-  class main {
+  $array3 = array(11,21,31,41);
+  $obj->countArray($array3);
+
+ 	class main {
  
 	public function __construct() {
 
@@ -34,6 +37,15 @@
 		echo '<h1> Merge Array Function </h1>';
 		$result = array_merge($array1,$array2);
 		print_r($result);
+		echo '<hr>';
+	}
+
+	public function countArray($array3) {
+		echo '<h1> Count array function demo </h1>';
+		print_r($array3);
+		echo'</br>No of elements in the array are:';
+		$result1 = count($array3);
+		print_r($result1);
 		echo '<hr>';
 	}
 
