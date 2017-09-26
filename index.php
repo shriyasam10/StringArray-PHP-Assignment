@@ -27,6 +27,9 @@
   $array8 = array("mango","banana");
   $obj->arrayPush($array8);
 
+  $array9 = array("lion","tiger","cheetah");
+  $obj->arrayShift($array9);
+
  	class main {
  
 	public function __construct() {
@@ -95,6 +98,18 @@
 		echo '<h1> Array push function demo </h1>';
 		array_push($array8);
 		print_r($array8);
+		echo '<hr>';
+	}
+        
+	public function arrayShift($array9) {
+		echo '<h1> Array shift function demo </h1>';
+		echo '</br>Array before shifting</br>';
+		print_r($array9);
+		echo '</br>Array after shifting</br>';
+		$animal = array_shift($array9);
+		print_r($array9);
+		echo '</br>' ;
+		print_r($animal);
 		echo '<hr>';
 	}
 
