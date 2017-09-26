@@ -37,6 +37,8 @@
   $obj->arrayReverse($array11);
 
   $str= 'abcdef';
+  $str1='ABCDEF';
+  $str2='hello friend how are you';
 
   $obj->stringLength($str);
   $obj->stringReverse($str);
@@ -195,6 +197,13 @@
 		echo '<h1> String Case Comparison </h1> ';
 		if(strcasecmp($str,$str1) == 0)
 			echo '$str is equal to $str1 in a case-insensitive string comparison';
+		echo '<hr>';
+	}
+
+	public function strWordCount($str2)	{
+		echo '<h1> String Word Count </h1>';
+		$result11 = str_word_count($str2);
+		print_r($result11);
 		echo '<hr>';
 	}
 
