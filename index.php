@@ -17,8 +17,8 @@
   $array4 = array("FirSt" => 1, "sEconD" => 2);
   $obj->changeKeyCase($array4);
 
-  $array5 = array("a" => "green", "red", "blue", "red");
-  $array6 = array("b" => "green", "yellow", "red");
+  $array5 = array("a" => "cat", "dog", "fox", "lion");
+  $array6 = array("b" => "fox", "cat", "dog");
   $obj->arrayDifference($array5,$array6);
 	
   $array7 = array(13,24);
@@ -39,6 +39,7 @@
   $str= 'abcdef';
 
   $obj->stringLength($str);
+  $obj->stringReverse($str);
 
  	class main {
  
@@ -147,6 +148,13 @@
 		echo '<h1> String length </h1>';
 		$result6 =  strlen($str);
 		print_r($result6);
+		echo '<hr>';
+	}
+	
+	public function stringReverse($str)	{
+		echo '<h1> String Reverse </h1>';
+		$result7 = strrev($str);
+		print_r($result7);
 		echo '<hr>';
 	}
 											
