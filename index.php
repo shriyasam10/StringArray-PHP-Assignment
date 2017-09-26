@@ -40,6 +40,7 @@
 
   $obj->stringLength($str);
   $obj->stringReverse($str);
+  $obj->stringToUpper($str);
 
  	class main {
  
@@ -158,6 +159,13 @@
 		echo '<hr>';
 	}
 											
+	public function stringToUpper($str)	{
+		echo '<h1> String to Upper Case </h1> ';
+		$result8 = strtoupper($str);
+		print_r($result8);
+		echo '<hr>';
+	}
+
 
         public function __destruct() {
 
