@@ -41,6 +41,8 @@
   $obj->stringLength($str);
   $obj->stringReverse($str);
   $obj->stringToUpper($str);
+  $obj->stringRepeat($str);
+  $obj->stringPadding($str);
 
  	class main {
  
@@ -165,10 +167,23 @@
 		print_r($result8);
 		echo '<hr>';
 	}
+	
+	public function stringRepeat($str)	{
+		echo '<h1> String Repeat</h1>';
+		$result9 = str_repeat($str,5);
+		print_r($result9);
+		echo '<hr>';
+	}
+
+	public function stringPadding($str) 	{
+		echo '<h1> String Padding</h1> ';
+		$result10 = str_pad($str, 10, "-=", STR_PAD_LEFT);
+		print_r($result10);
+		echo '<hr>';
+	}
 
 
-        public function __destruct() {
-
+	public function __destruct() 	{
 		echo '</br> Thankyou';	
 	}
    }
