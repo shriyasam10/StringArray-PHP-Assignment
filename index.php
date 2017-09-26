@@ -24,6 +24,9 @@
   $array7 = array(13,24);
   $obj->arrayProduct($array7);
 
+  $array8 = array("mango","banana");
+  $obj->arrayPush($array8);
+
  	class main {
  
 	public function __construct() {
@@ -88,9 +91,16 @@
 		echo '<hr>';
 	}
 	
+	public function arrayPush($array8)	{
+		echo '<h1> Array push function demo </h1>';
+		array_push($array8);
+		print_r($array8);
+		echo '<hr>';
+	}
+
         public function __destruct() {
 
-		echo '</br> I\'m Done';	
+		echo '</br> Thankyou';	
 	}
    }
 ?>
