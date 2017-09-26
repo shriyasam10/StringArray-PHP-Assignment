@@ -30,6 +30,9 @@
   $array9 = array("lion","tiger","cheetah");
   $obj->arrayShift($array9);
 
+  $array10 = array("a"=>"green","red" , "b"=>"green","blue","red");
+  $obj->arrayUnique($array10);
+
  	class main {
  
 	public function __construct() {
@@ -112,6 +115,17 @@
 		print_r($animal);
 		echo '<hr>';
 	}
+  	
+	public function arrayUnique($array10) {
+		echo '<h1> Array Unique elements function demo</h1> ';
+		echo '</br>Initial array</br>';
+		print_r($array10);
+		$result5 = array_unique($array10);
+		echo '</br>Result array</br>';
+		print_r($result5);
+		echo '<hr>';
+	}
+
 
         public function __destruct() {
 
