@@ -36,6 +36,10 @@
   $array11  = array("php", 4.0, array("green", "red"));
   $obj->arrayReverse($array11);
 
+  $str= 'abcdef';
+
+  $obj->stringLength($str);
+
  	class main {
  
 	public function __construct() {
@@ -139,6 +143,13 @@
 		echo '<hr>';
 	}
 																	
+	public function stringLength($str)	{
+		echo '<h1> String length </h1>';
+		$result6 =  strlen($str);
+		print_r($result6);
+		echo '<hr>';
+	}
+											
 
         public function __destruct() {
 
