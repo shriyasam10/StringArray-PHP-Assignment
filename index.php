@@ -17,10 +17,13 @@
   $array4 = array("FirSt" => 1, "sEconD" => 2);
   $obj->changeKeyCase($array4);
 
-  $array5 = array("green", "red", "blue", "red");
-  $array6 = array("green", "yellow", "red");
+  $array5 = array("a" => "green", "red", "blue", "red");
+  $array6 = array("b" => "green", "yellow", "red");
   $obj->arrayDifference($array5,$array6);
 	
+  $array7 = array(13,24);
+  $obj->arrayProduct($array7);
+
  	class main {
  
 	public function __construct() {
@@ -74,10 +77,17 @@
 		print_r($array6);
 		echo '</br>Difference between the two arrays</br>';
 		$result4 = array_diff($array5,$array6);
-		print_r($result4);
-		echo '<hr>';																	
+		print_r($result);
+		echo '<hr>';
 	}
 
+	
+	public function arrayProduct($array7)	{
+		echo '<h1> Array product function demo </h1>';
+		echo "product(a) = " . array_product($array7) . "</br>";
+		echo '<hr>';
+	}
+	
         public function __destruct() {
 
 		echo '</br> I\'m Done';	
