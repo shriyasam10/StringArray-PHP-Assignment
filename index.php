@@ -44,7 +44,8 @@
   $obj->stringRepeat($str);
   $obj->stringPadding($str);
   $obj->stringShuffle($str);
-  
+  $obj->stringCasecmp($str,$str1); 
+
  	class main {
  
 	public function __construct() {
@@ -187,6 +188,13 @@
 		echo '<h1> String Shuffle </h1> ';
 		$result11 = str_shuffle($str);
 		print_r($result11);
+		echo '<hr>';
+	}
+
+	public function stringCasecmp($str,$str1)	{
+		echo '<h1> String Case Comparison </h1> ';
+		if(strcasecmp($str,$str1) == 0)
+			echo '$str is equal to $str1 in a case-insensitive string comparison';
 		echo '<hr>';
 	}
 
