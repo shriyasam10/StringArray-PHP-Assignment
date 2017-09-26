@@ -32,6 +32,9 @@
 
   $array10 = array("a"=>"green","red" , "b"=>"green","blue","red");
   $obj->arrayUnique($array10);
+  
+  $array11  = array("php", 4.0, array("green", "red"));
+  $obj->arrayReverse($array11);
 
  	class main {
  
@@ -126,6 +129,16 @@
 		echo '<hr>';
 	}
 
+	public function arrayReverse($array11) {
+		echo '<h1> Array Reverse function demo </h1> ';
+		echo '</br>Initial array</br>';
+		print_r($array11);
+		$reversed = array_reverse($array11);
+		echo '</br>Reversed array</br>';
+		print_r($reversed);
+		echo '<hr>';
+	}
+																	
 
         public function __destruct() {
 
