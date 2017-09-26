@@ -40,6 +40,7 @@
   $str1='ABCDEF';
   $str2='hello friend how are you';
   $number = 1234.56;
+  $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
 
   $obj->stringLength($str);
   $obj->stringReverse($str);
@@ -49,6 +50,7 @@
   $obj->stringShuffle($str);
   $obj->stringCasecmp($str,$str1); 
   $obj->numberformat($number);
+  $obj->exploder($pizza);
 
  	class main {
  
@@ -213,6 +215,15 @@
 		echo '<h1>number format</h1>';
 		$english_format_number = number_format($number);
 		print_r($english_format_number);
+		echo '<hr>';
+	}
+
+	public function exploder($pizza)	{
+		echo '<h1> Explode function</h1>';
+		$pieces = explode(" ", $pizza);
+		echo $pieces[0];
+		echo '</br>';
+		echo $pieces[1];
 		echo '<hr>';
 	}
 
