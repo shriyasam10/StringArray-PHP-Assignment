@@ -4,7 +4,7 @@
   $text = "my text";
   $obj->printthis($text);
   
-  $array = array(1,2,3,4,5,6,7);
+  $array = array(1,2,3,4);
   $obj->printArray($array);
 
   $array1= array("Shriya","Pune","Bhakharwadi");
@@ -14,7 +14,7 @@
   $array3 = array(11,21,31,41);
   $obj->countArray($array3);
 
-  $array4 = array("FirSt" => 1, "sEconD" => 2);
+  $array4 = array("HelLo" => 1, "HeY" => 2);
   $obj->changeKeyCase($array4);
 
   $array5 = array("a" => "cat", "dog", "fox", "lion");
@@ -24,23 +24,23 @@
   $array7 = array(13,24);
   $obj->arrayProduct($array7);
 
-  $array8 = array("mango","banana");
+  $array8 = array("left","right");
   $obj->arrayPush($array8);
 
-  $array9 = array("lion","tiger","cheetah");
+  $array9 = array("orange","blue","black");
   $obj->arrayShift($array9);
 
-  $array10 = array("a"=>"green","red" , "b"=>"green","blue","red");
+  $array10 = array("a"=>"tiger","lion" , "b"=>"lion","tiger","panther");
   $obj->arrayUnique($array10);
   
-  $array11  = array("php", 4.0, array("green", "red"));
+  $array11  = array("puma", 898, array("purple", "pepsi"));
   $obj->arrayReverse($array11);
 
-  $str= 'abcdef';
-  $str1='ABCDEF';
-  $str2='hello friend how are you';
-  $number = 1234.56;
-  $pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+  $str= 'shriya';
+  $str1='SHRIYA';
+  $str2='i am sleepy';
+  $number = 88554.98;
+  $food  = "burger1 burger2 burger3 burger4 burger5 burger6";
 
   $obj->stringLength($str);
   $obj->stringReverse($str);
@@ -50,13 +50,13 @@
   $obj->stringShuffle($str);
   $obj->stringCasecmp($str,$str1); 
   $obj->numberformat($number);
-  $obj->exploder($pizza);
+  $obj->exploder($food);
 
  	class main {
  
 	public function __construct() {
 
-		echo '<h2> SHRIYA SAMAK </h2> </br> Week 3 :  Strings and Arrays';
+		echo '<h2> SHRIYA SAMAK </h2> </br> THIS IS MY HOMEWORK FOR TOPIC : STRINGS AND ARRAYS';
 	}
 
 	public function printthis($text) {
@@ -118,7 +118,7 @@
 	
 	public function arrayPush($array8)	{
 		echo '<h1> Array push function demo </h1>';
-		array_push($array8);
+		array_push($array8,"Up","Down");
 		print_r($array8);
 		echo '<hr>';
 	}
@@ -218,18 +218,18 @@
 		echo '<hr>';
 	}
 
-	public function exploder($pizza)	{
+	public function exploder($food)	{
 		echo '<h1> Explode function</h1>';
-		$pieces = explode(" ", $pizza);
-		echo $pieces[0];
+		$burger = explode(" ", $food);
+		echo $burger[0];
 		echo '</br>';
-		echo $pieces[1];
+		echo $burger[1];
 		echo '<hr>';
 	}
 
 
 	public function __destruct() 	{
-		echo '</br> Thankyou';	
+		echo '</br> THE END';	
 	}
    }
 ?>
