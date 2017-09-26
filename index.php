@@ -39,6 +39,7 @@
   $str= 'abcdef';
   $str1='ABCDEF';
   $str2='hello friend how are you';
+  $number = 1234.56;
 
   $obj->stringLength($str);
   $obj->stringReverse($str);
@@ -47,6 +48,7 @@
   $obj->stringPadding($str);
   $obj->stringShuffle($str);
   $obj->stringCasecmp($str,$str1); 
+  $obj->numberformat($number);
 
  	class main {
  
@@ -204,6 +206,13 @@
 		echo '<h1> String Word Count </h1>';
 		$result11 = str_word_count($str2);
 		print_r($result11);
+		echo '<hr>';
+	}
+	
+	public function numberformat($number) {
+		echo '<h1>number format</h1>';
+		$english_format_number = number_format($number);
+		print_r($english_format_number);
 		echo '<hr>';
 	}
 
