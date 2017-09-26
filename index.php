@@ -43,7 +43,8 @@
   $obj->stringToUpper($str);
   $obj->stringRepeat($str);
   $obj->stringPadding($str);
-
+  $obj->stringShuffle($str);
+  
  	class main {
  
 	public function __construct() {
@@ -179,6 +180,13 @@
 		echo '<h1> String Padding</h1> ';
 		$result10 = str_pad($str, 10, "-=", STR_PAD_LEFT);
 		print_r($result10);
+		echo '<hr>';
+	}
+  	
+	public function stringShuffle($str)	{
+		echo '<h1> String Shuffle </h1> ';
+		$result11 = str_shuffle($str);
+		print_r($result11);
 		echo '<hr>';
 	}
 
